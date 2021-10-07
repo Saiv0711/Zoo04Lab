@@ -33,7 +33,7 @@ public class GoatGroup {
     public static void run() {
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
         System.out.println("Hey - look at the goats!");
-        myGroup.forEach(goats -> {
+        myGroup.forEach(goat -> {
             goat.speak();
             goat.move();
         });

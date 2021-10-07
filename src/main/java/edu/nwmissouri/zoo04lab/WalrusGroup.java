@@ -3,7 +3,7 @@ package edu.nwmissouri.zoo04lab;
 import java.util.ArrayList;
 
 /**
- *
+ * Provides methods to create and run a group of Walrus
  * @author Rehaman Naguru Abdur
  */
 public class WalrusGroup {

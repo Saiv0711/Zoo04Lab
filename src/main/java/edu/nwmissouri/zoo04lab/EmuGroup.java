@@ -4,14 +4,14 @@ package edu.nwmissouri.zoo04lab;
 import java.util.ArrayList;
 
 /**
- *
+ * This class defines EmuGroup
  * @author Venkata Prabhakar Takkellapati (S545407)
  */
 public class EmuGroup {
         private static ArrayList<Emu> myGroup;
 /**
  * 
- * @return 
+ * @return group size
  */
     public static int create() {
         myGroup = new ArrayList<>();
@@ -24,7 +24,7 @@ public class EmuGroup {
         return myGroup.size();
     }
     /**
-     * 
+     * It does not return any value
      */
 public static void run() {
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");

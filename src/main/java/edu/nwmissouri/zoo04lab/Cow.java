@@ -6,7 +6,7 @@
 package edu.nwmissouri.zoo04lab;
 
 /**
- *
+ * Cow class (derived subclass of the superclass Animal)
  * @author Harika_Chintala
  */
 public class Cow extends Animal{

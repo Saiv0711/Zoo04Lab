@@ -6,7 +6,7 @@
 package edu.nwmissouri.zoo04lab;
 
 /**
- *
+ * HarpSeal class (derived subclass of the superclass Animal)
  * @author Rehana Naguru
  */
 public class HarpSeal extends Animal{

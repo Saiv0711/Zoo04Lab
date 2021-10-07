@@ -6,10 +6,14 @@
 package edu.nwmissouri.zoo04lab;
 
 /**
- *
+ * Duck class (derived subclass of the superclass Animal)
  * @author Sandhya Nidigonda
  */
 public class Duck extends Animal {
+    /**
+     * Duck constructor 
+     * @param name - the name of this Animal is Duck
+     */
     public Duck(String name){
         super(name);
     } 
