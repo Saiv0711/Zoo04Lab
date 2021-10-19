@@ -10,30 +10,82 @@ package edu.nwmissouri.zoo04lab;
  * @author Rohan Kondaveeti
  */
 public class Goat extends Animal {
-    public Goat(String name){
+
+    public Goat(String name) {
         super(name);
     }
-    
-   
-    public void eat(){
-        System.out.println(" I eat like Yumm yumm yumm!!");
-    }
+
     @Override
-    public void speak(){
-        System.out.println(" I am a goat.. "+this.name);
+    public void speak() {
+        System.out.printf("I'm an Goat. I'm a pet of %s. \n", this.name);
     }
-     @Override
-    public void move()
-    {
-        System.out.println("I can walk with four legs");
+
+    @Override
+    public void move() {
+        System.out.println("I can walk with four legs.");
+    }
+
+    public void eat() {
+        System.out.println("I eat like Yumm yumm yumm!!");
+    }
+
+    public void child() {
+        System.out.println("I can give birth to one child at once.");
+    }
+
+    public void color() {
+        System.out.println("I can be in black, brown and white color.");
     }
     
-   
-    public void child(){
-        System.out.println(" I can give birth to one child at once");
+    /**
+     ** Custom confess function
+     *
+     * @param valueOne double input
+     * @param valueTwo int input
+     * 
+     */
+    public void confess() {
+        double a = 2.5;
+        int b = 2;
+        double c = getGoatAddition(a, b);
+        System.out.printf("I know GoatAddition! %4.2f plus %d is %4.2f \n", a, b, c);
     }
-     
-    public void color(){
-        System.out.println("I can be in black, brown and white color ");
+
+    /**
+     * Custom getGoatAddtion function 
+     *
+     * @param valueOne double input
+     * @param valueTwo int input
+     * @return double sum
+     */
+    public double getGoatAddition(double valueOne, int valueTwo) {
+        return valueOne + valueTwo;
+    }
+    
+    /**
+     * Enum function with plant values
+     * 
+     */
+    public enum Gender {
+        Male,
+        Female,
+        Other,
+    }
+
+    /**
+     * Main method
+     * @param args 
+     */
+    public static void main(String[] args) {
+        Goat goat = new Goat("Rohan");
+        goat.speak();
+        goat.move();
+        goat.eat();
+        goat.child();
+        goat.color();
+        goat.confess();
+        for (Gender gender : Gender.values()) {
+            System.out.println(gender);
+        }
     }
 }

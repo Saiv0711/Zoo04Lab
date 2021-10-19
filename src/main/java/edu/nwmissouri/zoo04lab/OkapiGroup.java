@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Provides methods to create and run a group of Okapis
  *
- * @author Pranay Bhargav Reddy Bakaram
+ * @author Pranay Bhargav Reddy Bakaram(s545147)
  */
 public class OkapiGroup {
 

@@ -12,6 +12,15 @@ package edu.nwmissouri.zoo04lab;
  */
 //Inheritance taking place here
 public class CongoLion extends Animal {
+    enum COLOUR
+            {
+        BROWN,
+        RED,
+        YELLOW
+        
+        
+     }
+
     public CongoLion(String name) 
    {
        super(name);
@@ -42,7 +51,27 @@ public class CongoLion extends Animal {
     {
         System.out.println("I move with four legs");
     }
-    
+    public String name(String s,String n){
+        return s+n;
+        
+    }
+    public void display(){
+        System.out.println("my name:"+name("akshay","kintali"));
+    }
+     public static void main(String[] args) {
+        CongoLion CL = new CongoLion("Kintali");
+        CL.speak();
+        CL.move();
+        CL.name("akshay","kintali");
+        CL.display();
+        CongoLion.COLOUR R1=CongoLion.COLOUR.BROWN;
+        CongoLion.COLOUR R2=CongoLion.COLOUR.RED;
+        CongoLion.COLOUR R3=CongoLion.COLOUR.YELLOW;
+        System.out.println("enums:"+R1+"\n"+R2+"\n"+R3);
+        
+        
+        
+    }
     
     
 }

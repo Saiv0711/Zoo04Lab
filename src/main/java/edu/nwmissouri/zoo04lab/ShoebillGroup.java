@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 
 /**
- *
+ * Provides methods to create and run a group of Shoebills
  * @author Gayatri Devabhaktuni
  */
 public class ShoebillGroup {

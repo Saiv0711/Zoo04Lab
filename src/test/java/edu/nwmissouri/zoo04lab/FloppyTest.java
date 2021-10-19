@@ -11,9 +11,9 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 /**
- * Test Floppy using JUnit5 
+ * Test Floppy using JUnit5
  *
- * @author S545243  Satheesh Eppalapelli
+ * @author S545243 Satheesh Eppalapelli
  */
 public class FloppyTest {
 
@@ -47,9 +47,9 @@ public class FloppyTest {
      */
     @Test
     public void testSpeak() throws Exception {
-        String expected = "I'm Allie. I'm an Floppy!";
-        var aardvark = new Floppy("Allie");
-        aardvark.speak();
+        String expected = "I'm an Floppy! I'm a pet of Satheesh.";
+        var floppy = new Floppy("Satheesh");
+        floppy.speak();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
@@ -62,10 +62,58 @@ public class FloppyTest {
     @Test
     public void testMove() throws Exception {
         String expected = "When I move, I walk, walk, walk.";
-        var aardvark = new Floppy("Allie");
-         aardvark.move();
+        var floppy = new Floppy("Satheesh");
+        floppy.move();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
 
+    /**
+     * Test of location method, of class Floppy.
+     *
+     * @throws java.lang.Exception
+     */
+    @Test
+    public void testLocation() throws Exception {
+        String expected = "I live in water!";
+        var floppy = new Floppy("Satheesh");
+        floppy.location();
+        String actual = outputStreamCaptor.toString().trim();
+        assertEquals(expected, actual);
+    }
+
+    /**
+     * Test of character method, of class Floppy.
+     *
+     * @throws java.lang.Exception
+     */
+    @Test
+    public void testCharacter() throws Exception {
+        String expected = "The Floppy Fish has a base of different shades of blue with yellow fins, and a yellow tail.";
+        var floppy = new Floppy("Satheesh");
+        floppy.character();
+        String actual = outputStreamCaptor.toString().trim();
+        assertEquals(expected, actual);
+    }
+
+    /**
+     * Test custom function ardvarkAddition()
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testFloppyAddition() throws Exception {
+
+        // set up test, figure out expected by hand
+        double first = 5.0;
+        int second = 10;
+        double expected = 15.0;
+
+        // call function to get the actual
+        var floppy = new Floppy("Satheesh");
+        double actual = floppy.getFloppyAddition(first, second);
+
+        // assertEquals(expected, actual);
+        assertEquals(expected, actual);
+    }
 }

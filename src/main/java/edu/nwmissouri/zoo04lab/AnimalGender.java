@@ -11,5 +11,6 @@ package edu.nwmissouri.zoo04lab;
 public enum AnimalGender {
     UNKNOWN,
     FEMALE,
-    MALE
+    MALE,
+    OTHER
 }

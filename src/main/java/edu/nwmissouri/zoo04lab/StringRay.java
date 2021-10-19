@@ -18,7 +18,10 @@ public class StringRay extends Animal {
     public StringRay(String name) {
         super(name);
     }
-
+    
+   /**
+   * Swim method
+   */
    // @Override
     public void swim() {
         System.out.println("Generic animal swim");
@@ -32,4 +35,41 @@ public class StringRay extends Animal {
     public void speak() {
         System.out.println("Generic animal voice");
     }
+    
+    
+    public void confess() {
+        double a = 3.5;
+        int b = 3;
+        double c = getStringRayAddition(a, b);
+        System.out.printf("I know FloppyAddition! %4.2f plus %d is %4.2f \n", a, b, c);
+    }
+
+    public double getStringRayAddition(double valueOne, int valueTwo) {
+    return valueOne + valueTwo;
+    }
+
+    /**
+    * Enum function with plant values
+    *
+    */
+    public enum Times {
+        MORNING,
+        EVENEING,
+        NIGHT;
+    }
+
+    /**
+    * Main method
+    * @param args
+    */
+    public static void main(String[] args) {
+        var sr = new StringRay("Sai");
+        sr.speak();
+        sr.move();
+        sr.swim();
+        for (Times times : Times.values()) {
+            System.out.println(times);
+        }
+    }
+    
 }

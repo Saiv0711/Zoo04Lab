@@ -3,7 +3,7 @@ package edu.nwmissouri.zoo04lab;
 import java.util.ArrayList;
 
 /**
- *
+ * StringRayGroup which gives their behaviour
  * @author Saikrishna Vuppala
  */
 public class StringRayGroup {

@@ -3,15 +3,15 @@ package edu.nwmissouri.zoo04lab;
 import java.util.ArrayList;
 
 /**
- *
- * @author Satish Vagulapuram
+ *This class defines SunBearGroup
+ * @author Satish Vagulapuram (S544905)
  */
 public class SunBearGroup {
     
     private static ArrayList<SunBear> myGroup;
 
     /**
-     * Create a static group of SunBear
+     * Created a static group of SunBear
      *
      * @return the number of animals in the group
      */
@@ -27,7 +27,7 @@ public class SunBearGroup {
     }
 
     /**
-     * Run (simulate) the group doing things
+     * Running (simulate) the group doing things
      */
     public static void run() {
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");

@@ -19,7 +19,7 @@ public class BlackJaguarGroup {
     public static int create() {
         myBlackGroup = new ArrayList<>();
         
-        BlackJaguarGroup p = new BlackJaguarGroup("Black Jaguar 1");
+        BlackJaguar p = new BlackJaguar("Black Jaguar 1");
         myBlackGroup.add(p);
         myBlackGroup.add(new BlackJaguar("Black Jaguar 2"));
         myBlackGroup.add(new BlackJaguar("Black Jaguar 3"));

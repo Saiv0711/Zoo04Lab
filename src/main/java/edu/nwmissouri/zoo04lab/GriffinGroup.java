@@ -11,12 +11,12 @@ public class GriffinGroup {
 
     // How many Griffins should be made in a group
     private static final int GROUP_SIZE = 3;
-    
+
     // What names should we use for our group
     private static final String[] GROUP_NAMES = {
         "George", "Grant", "Gryph"
     };
-    
+
     // Where we will be storing our Griffins
     private static ArrayList<Griffin> grifGroup;
 
@@ -28,7 +28,7 @@ public class GriffinGroup {
     public static int create() {
         grifGroup = new ArrayList<>();
         for (int i = 0; i < GROUP_SIZE; i++) {
-            String name = (i < GROUP_NAMES.length) ? GROUP_NAMES[i] : "Griff"+i;
+            String name = (i < GROUP_NAMES.length) ? GROUP_NAMES[i] : "Griff" + i;
             grifGroup.add(new Griffin(name));
         }
         return grifGroup.size();

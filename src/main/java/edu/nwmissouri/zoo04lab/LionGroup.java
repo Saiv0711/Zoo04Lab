@@ -34,6 +34,8 @@ public class LionGroup {
         myGroup.forEach(Lion -> {
             Lion.speak();
             Lion.move();
+            Lion.speed();
+            Lion.profess();
         });
         System.out.println("Nice Lion - that was fun!");
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");

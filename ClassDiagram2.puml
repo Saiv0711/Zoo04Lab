@@ -1,0 +1,33 @@
+@startuml
+class edu.nwmissouri.zoo04lab.AardvarkGroup
+class edu.nwmissouri.zoo04lab.AspGroup
+class edu.nwmissouri.zoo04lab.BearcatGroup
+class edu.nwmissouri.zoo04lab.CowGroup
+class edu.nwmissouri.zoo04lab.CrocodileGroup
+class edu.nwmissouri.zoo04lab.DalmatianGroup
+class edu.nwmissouri.zoo04lab.DuckGroup
+class edu.nwmissouri.zoo04lab.FloppyGroup
+class edu.nwmissouri.zoo04lab.GerenukGroup
+class edu.nwmissouri.zoo04lab.GriffinGroup
+class edu.nwmissouri.zoo04lab.KangaroovGroup
+class edu.nwmissouri.zoo04lab.MightyLionGroup
+class edu.nwmissouri.zoo04lab.RabbitGroup
+class edu.nwmissouri.zoo04lab.ShoebillGroup
+class edu.nwmissouri.zoo04lab.XraytetraGroup
+class java.util.ArrayList
+edu.nwmissouri.zoo04lab.AardvarkGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.AspGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.BearcatGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.CowGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.CrocodileGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.DalmatianGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.DuckGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.FloppyGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.GerenukGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.GriffinGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.KangaroovGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.MightyLionGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.RabbitGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.ShoebillGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.XraytetraGroup ..> java.util.ArrayList
+@enduml

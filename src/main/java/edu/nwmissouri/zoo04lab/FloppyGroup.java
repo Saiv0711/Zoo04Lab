@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Provides methods to create and run a group of Floppy
  *
- * @author Denise Case
+ * @author S545243 Satheesh Eppalapelli
  */
 public class FloppyGroup {
 

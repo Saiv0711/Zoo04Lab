@@ -1,4 +1,6 @@
-package SiberianTigerGroup;
+package edu.nwmissouri.zoo04lab;
+
+import java.util.ArrayList;
 
 /**
  *
@@ -33,6 +35,7 @@ public class SiberianTigerGroup {
         mySiberianTigerGroup.forEach(SiberianTiger -> {
             SiberianTiger.speak();
             SiberianTiger.move();
+            SiberianTiger.eat();
         });
         System.out.println("Nice SiberianTigers - they are cute");
         System.out.println("TTTTTTTTTTTTTTTTTTT");

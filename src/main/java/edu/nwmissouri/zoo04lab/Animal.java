@@ -19,7 +19,7 @@ public abstract class Animal {
      *
      * We limit the choices for selection by using an enum
      */
-    private AnimalGender gender;
+    protected AnimalGender gender;
 
     /**
      * Animal constructor

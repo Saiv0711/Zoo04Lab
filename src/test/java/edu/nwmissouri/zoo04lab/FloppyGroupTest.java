@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Test Floppy Group.
- * 
+ *
  * @author S545243 Satheesh Eppalapelli
  */
 public class FloppyGroupTest {

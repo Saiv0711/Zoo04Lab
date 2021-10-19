@@ -12,7 +12,7 @@ public class GerenukGroup {
     private static ArrayList<Gerenuk> myGroup;
 
     /**
-     * Create a static group of Gerenuks
+     * Create a static group of Gerenuk
      *
      * @return the number of animals in the group
      */

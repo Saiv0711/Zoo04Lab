@@ -1,0 +1,236 @@
+@startuml
+abstract class edu.nwmissouri.zoo04lab.Animal
+annotation java.lang.Override
+class edu.nwmissouri.Zoo04lab.Animal
+class edu.nwmissouri.Zoo04lab.ArizonaJaguar
+class edu.nwmissouri.Zoo04lab.YukonMoose
+class edu.nwmissouri.zoo04lab.Aardvark
+class edu.nwmissouri.zoo04lab.AardvarkGroup
+class edu.nwmissouri.zoo04lab.Abyssinian
+class edu.nwmissouri.zoo04lab.Arvicolinae
+class edu.nwmissouri.zoo04lab.Asp
+class edu.nwmissouri.zoo04lab.AspGroup
+class edu.nwmissouri.zoo04lab.Bearcat
+class edu.nwmissouri.zoo04lab.BearcatGroup
+class edu.nwmissouri.zoo04lab.BengalTiger
+class edu.nwmissouri.zoo04lab.Brachiosaurus
+class edu.nwmissouri.zoo04lab.Buffalo
+class edu.nwmissouri.zoo04lab.Cat
+class edu.nwmissouri.zoo04lab.Cheetah
+class edu.nwmissouri.zoo04lab.CongoLion
+class edu.nwmissouri.zoo04lab.Cow
+class edu.nwmissouri.zoo04lab.CowGroup
+class edu.nwmissouri.zoo04lab.Crocodile
+class edu.nwmissouri.zoo04lab.CrocodileGroup
+class edu.nwmissouri.zoo04lab.Dalmatian
+class edu.nwmissouri.zoo04lab.DalmatianGroup
+class edu.nwmissouri.zoo04lab.Deer
+class edu.nwmissouri.zoo04lab.Dinosaur
+class edu.nwmissouri.zoo04lab.Duck
+class edu.nwmissouri.zoo04lab.DuckGroup
+class edu.nwmissouri.zoo04lab.Elephant
+class edu.nwmissouri.zoo04lab.ElephantBird
+class edu.nwmissouri.zoo04lab.Emu
+class edu.nwmissouri.zoo04lab.FerociousTiger
+class edu.nwmissouri.zoo04lab.Floppy
+class edu.nwmissouri.zoo04lab.FloppyGroup
+class edu.nwmissouri.zoo04lab.Frog
+class edu.nwmissouri.zoo04lab.Gerenuk
+class edu.nwmissouri.zoo04lab.GerenukGroup
+class edu.nwmissouri.zoo04lab.Giraffe
+class edu.nwmissouri.zoo04lab.Glyptodon
+class edu.nwmissouri.zoo04lab.Goat
+class edu.nwmissouri.zoo04lab.Griffin
+class edu.nwmissouri.zoo04lab.GriffinGroup
+class edu.nwmissouri.zoo04lab.HarpSeal
+class edu.nwmissouri.zoo04lab.Hippopotamus
+class edu.nwmissouri.zoo04lab.Kangaroo
+class edu.nwmissouri.zoo04lab.Kangaroov
+class edu.nwmissouri.zoo04lab.KangaroovGroup
+class edu.nwmissouri.zoo04lab.Koala
+class edu.nwmissouri.zoo04lab.Liger
+class edu.nwmissouri.zoo04lab.Lion
+class edu.nwmissouri.zoo04lab.Lioness
+class edu.nwmissouri.zoo04lab.MightyLion
+class edu.nwmissouri.zoo04lab.MightyLionGroup
+class edu.nwmissouri.zoo04lab.MuleDeer
+class edu.nwmissouri.zoo04lab.Okapi
+class edu.nwmissouri.zoo04lab.Panda
+class edu.nwmissouri.zoo04lab.Panthera
+class edu.nwmissouri.zoo04lab.PolarBear
+class edu.nwmissouri.zoo04lab.ProngHorn
+class edu.nwmissouri.zoo04lab.Puma
+class edu.nwmissouri.zoo04lab.Rabbit
+class edu.nwmissouri.zoo04lab.RabbitGroup
+class edu.nwmissouri.zoo04lab.RelayHorse
+class edu.nwmissouri.zoo04lab.RoaringLion
+class edu.nwmissouri.zoo04lab.Shoebill
+class edu.nwmissouri.zoo04lab.ShoebillGroup
+class edu.nwmissouri.zoo04lab.SiberianTiger
+class edu.nwmissouri.zoo04lab.Squirrel
+class edu.nwmissouri.zoo04lab.Stag
+class edu.nwmissouri.zoo04lab.StringRay
+class edu.nwmissouri.zoo04lab.SunBear
+class edu.nwmissouri.zoo04lab.TauntingTiger
+class edu.nwmissouri.zoo04lab.Walrus
+class edu.nwmissouri.zoo04lab.Xraytetra
+class edu.nwmissouri.zoo04lab.XraytetraGroup
+class edu.nwmissouri.zoo04lab.ZooApp
+class edu.nwmissouri.zoo04lab.ZooBuildCodeIssues
+class edu.nwmissouri.zoo04lab.ZooBuildSwitch
+class edu.nwmissouri.zoo04lab.ZooCheckFiles
+class java.io.File
+class java.io.IOException
+class java.nio.charset.StandardCharsets
+class java.nio.file.Files
+class java.nio.file.Path
+class java.nio.file.Paths
+class java.util.ArrayList
+class java.util.Scanner
+enum edu.nwmissouri.zoo04lab.AnimalGender
+enum edu.nwmissouri.zoo04lab.AnimalLegs
+edu.nwmissouri.Zoo04lab.ArizonaJaguar ..> java.lang.Override
+edu.nwmissouri.Zoo04lab.ArizonaJaguar --|> edu.nwmissouri.Zoo04lab.Animal
+edu.nwmissouri.Zoo04lab.YukonMoose --|> edu.nwmissouri.Zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Aardvark --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Aardvark ..> java.lang.Override
+edu.nwmissouri.zoo04lab.AardvarkGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.Abyssinian --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Abyssinian ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Arvicolinae --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Arvicolinae ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Asp --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Asp ..> java.lang.Override
+edu.nwmissouri.zoo04lab.AspGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.Bearcat --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Bearcat ..> java.lang.Override
+edu.nwmissouri.zoo04lab.BearcatGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.BengalTiger --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.BengalTiger ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Brachiosaurus --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Buffalo --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Buffalo ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Cat --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Cat ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Cheetah --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Cheetah ..> java.lang.Override
+edu.nwmissouri.zoo04lab.CongoLion --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.CongoLion ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Cow --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Cow ..> java.lang.Override
+edu.nwmissouri.zoo04lab.CowGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.Crocodile --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Crocodile ..> java.lang.Override
+edu.nwmissouri.zoo04lab.CrocodileGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.Dalmatian --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Dalmatian ..> java.lang.Override
+edu.nwmissouri.zoo04lab.DalmatianGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.Deer --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Deer ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Dinosaur --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Dinosaur ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Duck --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Duck ..> java.lang.Override
+edu.nwmissouri.zoo04lab.DuckGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.Elephant --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Elephant ..> java.lang.Override
+edu.nwmissouri.zoo04lab.ElephantBird --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.ElephantBird ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Emu --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Emu ..> java.lang.Override
+edu.nwmissouri.zoo04lab.FerociousTiger --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.FerociousTiger ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Floppy --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Floppy ..> java.lang.Override
+edu.nwmissouri.zoo04lab.FloppyGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.Frog --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Frog ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Gerenuk --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Gerenuk ..> java.lang.Override
+edu.nwmissouri.zoo04lab.GerenukGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.Giraffe --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Giraffe ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Glyptodon --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Glyptodon ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Goat --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Goat ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Griffin --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Griffin ..> java.lang.Override
+edu.nwmissouri.zoo04lab.GriffinGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.HarpSeal --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.HarpSeal ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Hippopotamus --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Hippopotamus ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Kangaroo --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Kangaroo ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Kangaroov --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Kangaroov ..> java.lang.Override
+edu.nwmissouri.zoo04lab.KangaroovGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.Koala --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Liger --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Liger ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Lion --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Lion ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Lioness --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Lioness ..> java.lang.Override
+edu.nwmissouri.zoo04lab.MightyLion --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.MightyLion ..> java.lang.Override
+edu.nwmissouri.zoo04lab.MightyLionGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.MuleDeer --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.MuleDeer ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Okapi --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Panda --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Panda ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Panthera --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Panthera ..> java.lang.Override
+edu.nwmissouri.zoo04lab.PolarBear --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.PolarBear ..> java.lang.Override
+edu.nwmissouri.zoo04lab.ProngHorn --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.ProngHorn ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Puma --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Rabbit --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Rabbit ..> java.lang.Override
+edu.nwmissouri.zoo04lab.RabbitGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.RelayHorse --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.RelayHorse ..> java.lang.Override
+edu.nwmissouri.zoo04lab.RoaringLion --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Shoebill --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Shoebill ..> java.lang.Override
+edu.nwmissouri.zoo04lab.ShoebillGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.SiberianTiger --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.SiberianTiger ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Squirrel --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Squirrel ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Stag --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Stag ..> java.lang.Override
+edu.nwmissouri.zoo04lab.StringRay --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.StringRay ..> java.lang.Override
+edu.nwmissouri.zoo04lab.SunBear --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.SunBear ..> java.lang.Override
+edu.nwmissouri.zoo04lab.TauntingTiger --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.TauntingTiger ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Walrus --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Walrus ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Xraytetra --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Xraytetra ..> java.lang.Override
+edu.nwmissouri.zoo04lab.XraytetraGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.ZooApp ..> java.util.Scanner
+edu.nwmissouri.zoo04lab.ZooBuildCodeIssues ..> java.io.File
+edu.nwmissouri.zoo04lab.ZooBuildCodeIssues ..> java.io.IOException
+edu.nwmissouri.zoo04lab.ZooBuildCodeIssues ..> java.nio.file.Files
+edu.nwmissouri.zoo04lab.ZooBuildCodeIssues ..> java.nio.file.Path
+edu.nwmissouri.zoo04lab.ZooBuildCodeIssues ..> java.nio.file.Paths
+edu.nwmissouri.zoo04lab.ZooBuildSwitch ..> edu.nwmissouri.zoo04lab.ZooCheckFiles
+edu.nwmissouri.zoo04lab.ZooBuildSwitch ..> java.io.File
+edu.nwmissouri.zoo04lab.ZooBuildSwitch ..> java.io.IOException
+edu.nwmissouri.zoo04lab.ZooBuildSwitch ..> java.nio.file.Path
+edu.nwmissouri.zoo04lab.ZooBuildSwitch ..> java.nio.file.Paths
+edu.nwmissouri.zoo04lab.ZooBuildSwitch ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.ZooCheckFiles ..> java.io.File
+edu.nwmissouri.zoo04lab.ZooCheckFiles ..> java.io.IOException
+edu.nwmissouri.zoo04lab.ZooCheckFiles ..> java.nio.charset.StandardCharsets
+edu.nwmissouri.zoo04lab.ZooCheckFiles ..> java.nio.file.Files
+edu.nwmissouri.zoo04lab.ZooCheckFiles ..> java.nio.file.Path
+edu.nwmissouri.zoo04lab.ZooCheckFiles ..> java.nio.file.Paths
+edu.nwmissouri.zoo04lab.ZooCheckFiles ..> java.util.ArrayList
+@enduml

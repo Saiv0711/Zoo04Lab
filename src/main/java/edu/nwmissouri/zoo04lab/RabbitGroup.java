@@ -2,8 +2,8 @@ package edu.nwmissouri.zoo04lab;
 
 import java.util.ArrayList;
 
-/**
- *
+/** 
+ *This is Rabbit Group which defines the Rabbit class
  * @author Keerthana Ragut (s545031)
  */
 public class RabbitGroup {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Sai Kaushik Beeram
+ * @author Sai Kaushik Beeram (S545124)
  */
 public class PumaGroup {
     private static ArrayList<Puma> myGroup;

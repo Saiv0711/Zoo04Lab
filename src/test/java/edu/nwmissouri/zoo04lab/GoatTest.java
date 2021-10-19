@@ -11,7 +11,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 /**
- * Test Aardvark using JUnit5 
+ * Test Aardvark using JUnit5
  *
  * @author Rohan Kondaveeti
  */
@@ -47,9 +47,9 @@ public class GoatTest {
      */
     @Test
     public void testSpeak() throws Exception {
-        String expected = "I'm Allie. I'm an Goat!";
-        var goat = new Goat("Allie");
-         goat.speak();
+        String expected = "I'm an Goat. I'm a pet of Rohan.";
+        var goat = new Goat("Rohan");
+        goat.speak();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
@@ -61,10 +61,73 @@ public class GoatTest {
      */
     @Test
     public void testMove() throws Exception {
-        String expected = "When I move, I walk, walk, walk.";
-        var goat = new Goat("Allie");
-         goat.move();
+        String expected = "I can walk with four legs.";
+        var goat = new Goat("Rohan");
+        goat.move();
         String actual = outputStreamCaptor.toString().trim();
+        assertEquals(expected, actual);
+    }
+
+    /**
+     * Test of move method, of class Goat.
+     *
+     * @throws java.lang.Exception
+     */
+    @Test
+    public void testEat() throws Exception {
+        String expected = "I eat like Yumm yumm yumm!!";
+        var goat = new Goat("Rohan");
+        goat.eat();
+        String actual = outputStreamCaptor.toString().trim();
+        assertEquals(expected, actual);
+    }
+
+    /**
+     * Test of location method, of class Goat.
+     *
+     * @throws java.lang.Exception
+     */
+    @Test
+    public void testChild() throws Exception {
+        String expected = "I can give birth to one child at once.";
+        var goat = new Goat("Rohan");
+        goat.child();
+        String actual = outputStreamCaptor.toString().trim();
+        assertEquals(expected, actual);
+    }
+
+    /**
+     * Test of character method, of class Goat.
+     *
+     * @throws java.lang.Exception
+     */
+    @Test
+    public void testColor() throws Exception {
+        String expected = "I can be in black, brown and white color.";
+        var goat = new Goat("Rohan");
+        goat.color();
+        String actual = outputStreamCaptor.toString().trim();
+        assertEquals(expected, actual);
+    }
+
+    /**
+     * Test custom function ardvarkAddition()
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testGoatAddition() throws Exception {
+
+        // set up test, figure out expected by hand
+        double first = 5.0;
+        int second = 10;
+        double expected = 15.0;
+
+        // call function to get the actual
+        var gender = new Goat("Rohan");
+        double actual = gender.getGoatAddition(first, second);
+
+        // assertEquals(expected, actual);
         assertEquals(expected, actual);
     }
 

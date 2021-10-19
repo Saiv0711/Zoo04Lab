@@ -10,6 +10,11 @@ package edu.nwmissouri.zoo04lab;
  */
 public class Walrus extends Animal {
 
+    static double getWalrusAddition(double first, int second) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+
     //@param name
     public Walrus(String name) { // walrus constructor with parameter
         super(name);

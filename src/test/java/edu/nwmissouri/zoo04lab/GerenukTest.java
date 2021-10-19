@@ -1,24 +1,27 @@
-package edu.nwmissouri.zoo04lab;
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */package edu.nwmissouri.zoo04lab;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 /**
+ * Test Aardvark using JUnit5
  *
  * @author Tejaswini Challa
  */
 public class GerenukTest {
-   private final PrintStream standardOut = System.out;
+   
     private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
 
-    public GerenukTest() {
-    }
-
+    
     @BeforeAll
     public static void setUpClass() {
     }
@@ -43,9 +46,9 @@ public class GerenukTest {
      */
     @Test
     public void testSpeak() throws Exception {
-        String expected = "I'm Allie. I'm an Gerenuk!";
-        var Gerenuk = new Gerenuk("Allie");
-        Gerenuk.speak();
+        String expected = "I'm Gazelle. I'm an Aardvark!";
+        var gerenuk = new Gerenuk("Gazelle");
+        gerenuk.speak();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
@@ -57,10 +60,30 @@ public class GerenukTest {
      */
     @Test
     public void testMove() throws Exception {
-        String expected = "When I move, I walk, walk, walk.";
-        var Gerenuk = new Gerenuk("Allie");
-         Gerenuk.move();
+        String expected = "I can move with four legs";
+        var gerenuk = new Gerenuk("Gazelle");
+         gerenuk.move();
         String actual = outputStreamCaptor.toString().trim();
+        assertEquals(expected, actual);
+    }
+     /**
+     * Test custom function gerenukAddition()
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testGerenukAddition() throws Exception {
+        
+        // set up test, figure out expected by hand
+        double first = 5.0;
+        int second = 10;
+        double expected = 15.0;
+
+        // call function to get the actual
+        var gerenuk = new Gerenuk("Gazelle");
+        double actual = gerenuk.getGerenukAddition(first, second);
+
+        // assertEquals(expected, actual);
         assertEquals(expected, actual);
     }
 

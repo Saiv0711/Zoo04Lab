@@ -16,6 +16,16 @@ public class Frog extends Animal {
      * @param name
      * name parameter
      */
+    enum RACE
+            {
+        FIRST,
+        SECOUND,
+        THIRD
+        
+        
+        
+        
+    }
     public Frog(String name) {
         super(name);
     }
@@ -68,6 +78,34 @@ public class Frog extends Animal {
     {
         System.out.println("lives upto 10-12 years");
     }
+    public int age(int DOB,int cuy)
+    {
+        return cuy-DOB;
+    }
+    public void agec(){
+        System.out.println("Frog age: "+age(1999,2021));
+    }
+    public static void main(String[] args){
+        Frog f=new Frog("cold");
+        f.age(1999, 2021);
+        f.agec();
+        f.move();
+        f.habitate();
+        f.move();
+        f.feeding();
+        RACE R1=RACE.FIRST;
+        RACE R2=RACE.SECOUND;
+        RACE R3=RACE.THIRD;
+        System.out.println("enums:"+R1+"\n"+R2+"\n"+R3);
+        
+
+
+        
+       
+           
+       
+    }
+    
 }
 
 

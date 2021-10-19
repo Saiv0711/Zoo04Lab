@@ -3,7 +3,7 @@ package edu.nwmissouri.zoo04lab;
 import java.util.ArrayList;
 
 /**
- *
+ * This class of StagGroup provides methods to create and run a group of stags
  * @author Rahul Konda
  */
 public class StagGroup {

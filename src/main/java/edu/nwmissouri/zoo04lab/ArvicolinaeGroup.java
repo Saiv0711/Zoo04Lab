@@ -3,7 +3,8 @@ package edu.nwmissouri.zoo04lab;
 import java.util.ArrayList;
 
 /**
- *
+ * This is my custom group class
+ * Provides methods to create and run a group of ArvicolinaeGroup
  * @author NIKHIL KUMAR AKARAPU
  */
 public class ArvicolinaeGroup {
@@ -11,7 +12,7 @@ public class ArvicolinaeGroup {
     private static ArrayList<Arvicolinae> myGroup;
 
     /**
-     * Create a static group of Arvicolinae
+     * Create a static group of ArvicolinaeGroup
      *
      * @return the number of animals in the group
      */
@@ -25,6 +26,12 @@ public class ArvicolinaeGroup {
 
         return myGroup.size();
     }
+    
+    public enum Animal{
+        Arvicolinae,
+        Cat,
+        Cow, 
+    }
 
     /**
      * Run (simulate) the group doing things
@@ -35,11 +42,17 @@ public class ArvicolinaeGroup {
         myGroup.forEach(Arvicolinae -> {
             Arvicolinae.speak();
             Arvicolinae.move();
+            Arvicolinae.dance();
+            Arvicolinae.profess();
         });
         System.out.println("Nice Arvicolinae - that was fun!");
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+       
+        String message= "Thank You for Choosing Me "+ Animal.Arvicolinae+"!.";
+        System.out.println(message);
+        
     }
-
+     
     
     
 }
